@@ -603,6 +603,7 @@ footer a:hover {
     header {
         flex-direction: column;
         justify-content: center;
+        padding: 20px;
     }
 
     .header-content,
@@ -645,13 +646,43 @@ footer a:hover {
         font-size: 0.9rem;
     }
 
-    /* New styles to center the animated word container */
     .header-content h1 {
         text-align: center;
+        font-size: 2rem;
     }
 
     .animated-word-container {
         margin: 0 auto;
         text-align: center;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .feature {
+        padding: 15px;
+    }
+
+    .feature h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature p {
+        font-size: 0.9rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .contact-section a {
+        font-size: 1rem;
     }
 }
