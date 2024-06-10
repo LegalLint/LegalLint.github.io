@@ -196,11 +196,11 @@
 
         function changeWord() {
             wordElement.style.opacity = 0;
-            wordElement.style.transform = "translateY(100%)";
+            wordElement.style.transform = "translateY(50%)";
             setTimeout(() => {
                 wordIndex = (wordIndex + 1) % words.length;
                 wordElement.textContent = words[wordIndex];
-                wordElement.style.transform = "translateY(-100%)";
+                wordElement.style.transform = "translateY(-50%)";
                 setTimeout(() => {
                     wordElement.style.opacity = 1;
                     wordElement.style.transform = "translateY(0)";
