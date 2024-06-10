@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="header-logo">⚖️ LegalLint</div>
         <div class="header-content">
             <h1>Proofread your contracts 5x faster, right in Microsoft Word.</h1>
             <p>Your Drafting Copilot for Legal Documents</p>
             <div class="buttons">
-                <a href="#features" class="cta-button">Check Out Our Features</a>
+                <a href="javascript:void(0);" class="cta-button" onclick="scrollToFeatures()">Check Out Our Features</a>
                 <a href="https://appsource.microsoft.com/en-us/product/Office365/WA200006962" class="cta-button">Install
                     Now</a>
             </div>
@@ -116,6 +116,10 @@
             if (event.target == modal) {
                 closeVideo();
             }
+        }
+
+        function scrollToFeatures() {
+            document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>
