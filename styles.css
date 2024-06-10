@@ -103,7 +103,7 @@ header {
 }
 
 .features-section {
-    width: 100%;
+    max-width: 100%;
     padding: 60px 20px;
     background-color: #e0eafc;
     box-sizing: border-box;
@@ -225,7 +225,7 @@ header {
 }
 
 .why-section {
-    width: 100%;
+    max-width: 100%;
     background-color: #f0f4f8;
     padding: 60px 20px;
     text-align: center;
@@ -277,7 +277,7 @@ header {
 }
 
 .team-section {
-    width: 100%;
+    max-width: 100%;
     background-color: #f0f4f8;
     padding: 60px 20px;
     text-align: center;
@@ -359,7 +359,7 @@ header {
 }
 
 .download-section {
-    width: 100%;
+    max-width: 100%;
     background-color: #ffffff;
     padding: 60px 20px;
     text-align: center;
@@ -401,7 +401,7 @@ header {
 }
 
 .contact-section {
-    width: 100%;
+    max-width: 100%;
     background-color: #e0e7ff;
     padding: 60px 20px;
     text-align: center;
