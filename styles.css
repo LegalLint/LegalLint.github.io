@@ -224,7 +224,7 @@ header {
 
 .contact-section {
     width: 100%;
-    background-color: #f0f4f8;
+    background-color: #e0e7ff;
     padding: 60px 20px;
     text-align: center;
 }
@@ -244,7 +244,7 @@ header {
     text-decoration: none;
 }
 
-.contact-section a:hover {
+contact-section a:hover {
     text-decoration: underline;
 }
 
