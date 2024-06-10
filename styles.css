@@ -455,53 +455,6 @@ footer a:hover {
     color: #1e40af;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .header-content,
-    .header-image {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .header-image img {
-        margin-top: 20px;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
-    }
-
-    .team {
-        flex-direction: column;
-    }
-
-    .demo iframe {
-        height: 300px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .why-list {
-        padding: 0 10px;
-    }
-
-    .why-list h3 {
-        font-size: 1.2rem;
-    }
-
-    .why-list p {
-        font-size: 0.9rem;
-    }
-}
-
 /* Modal Styles */
 .modal {
     display: none;
@@ -644,4 +597,61 @@ footer a:hover {
     color: #ff6347;
     opacity: 1;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-content,
+    .header-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .header-image img {
+        margin-top: 20px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .demo iframe {
+        height: 300px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .why-list {
+        padding: 0 10px;
+    }
+
+    .why-list h3 {
+        font-size: 1.2rem;
+    }
+
+    .why-list p {
+        font-size: 0.9rem;
+    }
+
+    /* New styles to center the animated word container */
+    .header-content h1 {
+        text-align: center;
+    }
+
+    .animated-word-container {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
