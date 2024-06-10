@@ -20,12 +20,12 @@ header {
     justify-content: center;
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom right, #ffffff, #f1f3f5);
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
 }
 
 .header-logo {
-    font-size: 2.5rem;
-    color: #2c3e50;
+    font-size: 3rem;
+    color: #1f2937;
     margin-bottom: 20px;
 }
 
@@ -35,14 +35,14 @@ header {
 }
 
 .header-content h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
+    font-size: 3rem;
+    color: #1f2937;
     margin-bottom: 20px;
 }
 
 .header-content p {
     font-size: 1.2rem;
-    color: #7f8c8d;
+    color: #4b5563;
     margin-bottom: 30px;
 }
 
@@ -53,7 +53,7 @@ header {
 }
 
 .cta-button {
-    background-color: #4b5563;
+    background-color: #2563eb;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -65,7 +65,7 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #374151;
+    background-color: #1e40af;
 }
 
 .header-image {
@@ -105,6 +105,7 @@ header {
 .features-section {
     width: 100%;
     padding: 60px 20px;
+    background-color: #e0eafc;
 }
 
 .features {
@@ -119,12 +120,12 @@ header {
     grid-column: 1 / -1;
     text-align: center;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #1f2937;
 }
 
 .feature {
-    background-color: #f9fafb;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -139,17 +140,17 @@ header {
 .feature h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #1f2937;
 }
 
 .feature p {
     font-size: 1rem;
-    color: #666;
+    color: #6b7280;
 }
 
 .team-section {
     width: 100%;
-    background-color: #f3f4f6;
+    background-color: #f0f4f8;
     padding: 60px 20px;
     text-align: center;
 }
@@ -177,17 +178,17 @@ header {
 .team-member h3 {
     margin-bottom: 5px;
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #1f2937;
 }
 
 .team-member p {
     font-size: 1rem;
-    color: #666;
+    color: #6b7280;
 }
 
 .team-member .role {
     font-size: 1rem;
-    color: #7f8c8d;
+    color: #4b5563;
     margin-bottom: 10px;
 }
 
@@ -200,11 +201,11 @@ header {
 
 .download-section h2 {
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #1f2937;
 }
 
 .download-section a {
-    background-color: #4b5563;
+    background-color: #2563eb;
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -218,28 +219,28 @@ header {
 }
 
 .download-section a:hover {
-    background-color: #374151;
+    background-color: #1e40af;
 }
 
 .contact-section {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f0f4f8;
     padding: 60px 20px;
     text-align: center;
 }
 
 .contact-section h2 {
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: #1f2937;
 }
 
 .contact-section p {
     font-size: 1.2rem;
-    color: #7f8c8d;
+    color: #4b5563;
 }
 
 .contact-section a {
-    color: #0078d4;
+    color: #2563eb;
     text-decoration: none;
 }
 
@@ -255,14 +256,14 @@ footer {
 }
 
 footer a {
-    color: #4b5563;
+    color: #2563eb;
     text-decoration: none;
     margin: 0 10px;
     font-size: 1rem;
 }
 
 footer a:hover {
-    color: #0078d4;
+    color: #1e40af;
 }
 
 @media (max-width: 768px) {
