@@ -542,3 +542,46 @@ footer a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+.imprint-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.imprint-section h1 {
+    font-size: 2.5rem;
+    color: #1f2937;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.imprint-section p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 15px;
+}
+
+.imprint-section a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.imprint-section a:hover {
+    text-decoration: underline;
+}
+
+.imprint-section strong {
+    color: #1f2937;
+}
+
+.imprint-section .section-title {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
