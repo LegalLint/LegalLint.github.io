@@ -211,6 +211,9 @@
         // Initialize the first word
         setInitialWord();
 
+        // Trigger the first change after 1 seconds to ensure the initial word is visible
+        setTimeout(changeWord, 1000);
+
         // Start the interval for changing words every 3 seconds
         setInterval(changeWord, 3000);
     </script>
