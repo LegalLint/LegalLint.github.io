@@ -135,7 +135,7 @@ header {
 
 .feature img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
     margin-top: 10px;
     border-radius: 8px;
@@ -144,22 +144,22 @@ header {
 
 /* Specific object positions for each image */
 .cross-reference-inspector-img {
-    object-position: center 48%;
+    object-position: center 41%;
     /* Adjust as needed */
 }
 
 .document-reference-validator-img {
-    object-position: center 48%;
+    object-position: center 42%;
     /* Adjust as needed */
 }
 
 .definition-checker-img {
-    object-position: center 85%;
+    object-position: center 28%;
     /* Adjust as needed */
 }
 
 .unclosed-bracket-checker-img {
-    object-position: center 61%;
+    object-position: center 69%;
     /* Adjust as needed */
 }
 
@@ -169,7 +169,7 @@ header {
 }
 
 .punctuation-checker-img {
-    object-position: center 65%;
+    object-position: center 85%;
     /* Adjust as needed */
 }
 
