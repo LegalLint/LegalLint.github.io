@@ -17,7 +17,7 @@
         <div class="header-content">
             <h1>Proofread your contracts 10x
                 <span class="animated-word-container">
-                    <span id="animated-word" class="animated-word">faster</span>
+                    <span id="animated-word" class="animated-word"></span>
                 </span>
                 <br>with the best AI, right in Microsoft Word.
             </h1>
@@ -188,20 +188,31 @@
 
         const words = ["faster", "smarter", "precisely"];
         let wordIndex = 0;
+        const wordElement = document.getElementById("animated-word");
+
+        function setInitialWord() {
+            wordElement.textContent = words[wordIndex];
+        }
 
         function changeWord() {
-            const wordElement = document.getElementById("animated-word");
-            wordElement.style.animation = 'none'; // Reset animation
-            wordElement.offsetHeight; // Trigger reflow
-            wordElement.style.animation = null; // Start animation
-
+            wordElement.style.opacity = 0;
+            wordElement.style.transform = "translateY(100%)";
             setTimeout(() => {
                 wordIndex = (wordIndex + 1) % words.length;
                 wordElement.textContent = words[wordIndex];
-            }, 1500); // Adjust timing to match the keyframes
+                wordElement.style.transform = "translateY(-100%)";
+                setTimeout(() => {
+                    wordElement.style.opacity = 1;
+                    wordElement.style.transform = "translateY(0)";
+                }, 50);
+            }, 500); // This should match the CSS transition duration
         }
 
-        setInterval(changeWord, 3000); // Change every 3 seconds
+        // Initialize the first word
+        setInitialWord();
+
+        // Start the interval for changing words every 3 seconds
+        setInterval(changeWord, 3000);
     </script>
 </body>
 

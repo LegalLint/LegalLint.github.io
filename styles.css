@@ -631,10 +631,8 @@ footer a:hover {
 
 .animated-word-container {
     display: inline-block;
-    width: 200px;
-    /* Adjust this width to fit the longest word */
+    width: 220px;
     height: 1.2em;
-    /* Ensure it matches or slightly exceeds the font-size */
     text-align: left;
     overflow: hidden;
     vertical-align: bottom;
@@ -645,36 +643,6 @@ footer a:hover {
     position: relative;
     top: 0;
     color: #ff6347;
-    /* Change this color to your preference */
-    animation: changeWord 6s infinite;
-}
-
-@keyframes changeWord {
-
-    0%,
-    25% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    30% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-
-    50%,
-    55% {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-
-    60% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    opacity: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
