@@ -19,7 +19,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }
 
 .header-logo {
@@ -109,7 +109,7 @@ header {
 .features-section {
     max-width: 100%;
     padding: 60px 20px;
-    background-color: #e0eafc;
+    background-color: #f0f2f5;
     box-sizing: border-box;
 }
 
@@ -230,7 +230,7 @@ header {
 
 .why-section {
     max-width: 100%;
-    background-color: #f0f4f8;
+    background-color: #ffffff;
     padding: 60px 20px;
     text-align: center;
 }
@@ -364,7 +364,7 @@ header {
 
 .download-section {
     max-width: 100%;
-    background-color: #ffffff;
+    background-color: #e6e6e6;
     padding: 60px 20px;
     text-align: center;
 }
