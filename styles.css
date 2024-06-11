@@ -64,7 +64,7 @@ header {
 }
 
 .cta-button:hover {
-    background: linear-gradient(to right, #1e40af, #2563eb);
+    background: linear-gradient(to right, #5a82e1, #1e3c8e);
 }
 
 .cta-button:active {
@@ -399,7 +399,7 @@ header {
 }
 
 .download-section a:hover {
-    background: linear-gradient(to right, #1e40af, #2563eb);
+    background: linear-gradient(to right, #5a82e1, #1e3c8e);
 }
 
 .download-section a:active {
