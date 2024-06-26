@@ -342,20 +342,35 @@
             });
         });
 
+        // Function to close the menu
+        function closeMenu() {
+            const navbarMenu = document.querySelector('.navbar-menu');
+            navbarMenu.classList.remove('open');
+        }
+
+        // Toggle menu function
         function toggleMenu() {
             const navbarMenu = document.querySelector('.navbar-menu');
             navbarMenu.classList.toggle('open');
         }
 
+        // Event listener for menu items to close the menu when a menu item is clicked
         document.addEventListener('DOMContentLoaded', function () {
             const menuItems = document.querySelectorAll('.navbar-menu a');
-
             menuItems.forEach(item => {
                 item.addEventListener('click', () => {
-                    // Close the menu when a menu item is clicked
-                    toggleMenu();
+                    closeMenu();
                 });
             });
+        });
+
+        // Event listener to close the menu when clicking outside of it
+        document.addEventListener('click', function (event) {
+            const navbarMenu = document.querySelector('.navbar-menu');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (!navbarMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+                closeMenu();
+            }
         });
     </script>
 
