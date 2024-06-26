@@ -863,7 +863,6 @@ footer a:hover {
     border-radius: 8px;
 }
 
-/* Hamburger Menu Icon */
 .menu-icon {
     display: none;
     /* Hide by default for larger screens */
@@ -871,14 +870,32 @@ footer a:hover {
     font-size: 1.5rem;
     color: #333;
     padding: 10px;
+    background: #ffffff;
+    /* You might adjust this depending on your site's color scheme */
+    border: 1px solid #ddd;
+    /* Optional: adds a subtle border */
+    border-radius: 5px;
+    /* Rounded corners for the menu button */
+}
+
+.menu-icon span {
+    font-size: 1rem;
+    /* Smaller font size for the label */
+    color: #333;
+    /* Matching color for consistency */
+    margin-left: 5px;
+    /* Space between the icon and the label */
 }
 
 /* Toggle menu items visibility for smaller screens */
 @media screen and (max-width: 768px) {
     .menu-icon {
-        display: block;
-        background-color: #ffffff;
-        /* Show hamburger menu icon */
+        display: flex;
+        /* Changed from block to flex to align items */
+        align-items: center;
+        /* Center items vertically */
+        justify-content: center;
+        /* Center items horizontally */
     }
 
     .navbar-menu {
