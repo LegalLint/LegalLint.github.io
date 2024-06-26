@@ -808,14 +808,16 @@ footer a:hover {
 
 /* Navbar styles */
 .navbar {
-    background-color: #1f2937;
-    color: #ffffff;
-    padding: 10px 0;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    padding: 15px 0;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar .container {
@@ -883,6 +885,10 @@ footer a:hover {
 
 /* Toggle menu items visibility for smaller screens */
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
     .menu-icon {
         display: flex;
         /* Changed from block to flex to align items */
