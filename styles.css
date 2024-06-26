@@ -868,23 +868,17 @@ footer a:hover {
     /* Hide by default for larger screens */
     cursor: pointer;
     font-size: 1.5rem;
-    color: #333;
+    color: #ffffff;
     padding: 10px;
-    background: #ffffff;
-    /* You might adjust this depending on your site's color scheme */
-    border: 1px solid #ddd;
-    /* Optional: adds a subtle border */
-    border-radius: 5px;
-    /* Rounded corners for the menu button */
+    background: transparent;
+    /* Transparent background */
+    border: none;
 }
 
 .menu-icon span {
     font-size: 1rem;
-    /* Smaller font size for the label */
-    color: #333;
-    /* Matching color for consistency */
+    color: #ffffff;
     margin-left: 5px;
-    /* Space between the icon and the label */
 }
 
 /* Toggle menu items visibility for smaller screens */
@@ -900,17 +894,18 @@ footer a:hover {
 
     .navbar-menu {
         display: none;
-        /* Hide navbar items by default */
         position: absolute;
         top: 60px;
-        /* Adjust based on your header height */
         left: 0;
-        background-color: #ffffff;
+        background-color: #1f2937;
+        /* Dark background */
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         width: 100%;
         text-align: center;
         z-index: 100;
+        flex-direction: column;
+        /* Stack items vertically */
     }
 
     .navbar-menu.open {
