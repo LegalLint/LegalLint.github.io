@@ -920,12 +920,11 @@ footer a:hover {
     .navbar-menu a {
         display: block;
         padding: 10px 20px;
-        color: #333;
         text-decoration: none;
         transition: background-color 0.3s ease;
     }
 
     .navbar-menu a:hover {
-        background-color: #f0f0f0;
+        background-color: #2563eb;
     }
 }
