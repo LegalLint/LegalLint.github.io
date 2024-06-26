@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 50px 20px;
+    padding: 80px 20px;
     background: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }
 
@@ -624,7 +624,7 @@ footer a:hover {
     header {
         flex-direction: column;
         justify-content: center;
-        padding: 20px;
+        padding: 100px 20px;
     }
 
     .header-content,
@@ -804,4 +804,116 @@ footer a:hover {
 
 .faq-item a:hover {
     text-decoration: underline;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu li:last-child {
+    margin-right: 0;
+}
+
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    background-color: #2563eb;
+    border-radius: 8px;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    /* Hide by default for larger screens */
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 10px;
+}
+
+/* Toggle menu items visibility for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        background-color: #ffffff;
+        /* Show hamburger menu icon */
+    }
+
+    .navbar-menu {
+        display: none;
+        /* Hide navbar items by default */
+        position: absolute;
+        top: 60px;
+        /* Adjust based on your header height */
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+        z-index: 100;
+    }
+
+    .navbar-menu.open {
+        display: block;
+        /* Show navbar items when .open class is added */
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+    }
+
+    .navbar-menu a {
+        display: block;
+        padding: 10px 20px;
+        color: #333;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .navbar-menu a:hover {
+        background-color: #f0f0f0;
+    }
 }
