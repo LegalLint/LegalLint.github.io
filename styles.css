@@ -197,6 +197,7 @@ header {
     transition: opacity 1s ease, transform 1s ease;
     margin-left: 10px;
     /* Adjusted margin */
+    filter: blur(10px);
 }
 
 .features-header h2 {
@@ -223,6 +224,7 @@ header {
 .feature.visible img {
     opacity: 1;
     transform: scale(1);
+    filter: blur(0);
 }
 
 .why-section {
