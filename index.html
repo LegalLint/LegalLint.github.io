@@ -51,64 +51,85 @@
     </header>
 
     <section class="features-section" id="features">
-        <div class="features">
+        <div class="features-header">
             <h2>Key Features</h2>
+        </div>
+        <div class="features">
             <div class="feature">
-                <h3>🔗 Cross Reference Inspector</h3>
-                <ul>
-                    <li>Manage all cross-references in your documents easily.</li>
-                    <li>Access and understand terms without leaving your clause being reviewed.</li>
-                    <li>Edit with track changes integration.</li>
-                </ul>
-                <img src="img/cross_reference.png" alt="Cross Reference Inspector Screenshot"
-                    class="cross-reference-inspector-img">
+                <div class="feature-content">
+                    <div class="feature-content-inner">
+                        <h3>🔗 Cross Reference Inspector</h3>
+                        <ul>
+                            <li>Manage all cross-references in your documents easily.</li>
+                            <li>Access and understand terms without leaving your clause being reviewed.</li>
+                            <li>Edit with track changes integration.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/cross_reference.png" alt="Cross Reference Inspector Screenshot">
             </div>
             <div class="feature">
-                <h3>🛠️ Document Reference Validator</h3>
-                <ul>
-                    <li>Validate document references for accuracy instantly.</li>
-                    <li>Navigate to problematic references easily.</li>
-                    <li>Detect both source not found and empty references.</li>
-                </ul>
-                <img src="img/reference_validator.png" alt="Document Reference Validator Screenshot"
-                    class="document-reference-validator-img">
+                <div class="feature-content">
+                    <div class="feature-content-inner">
+                        <h3>🛠️ Document Reference Validator</h3>
+                        <ul>
+                            <li>Validate document references for accuracy instantly.</li>
+                            <li>Navigate to problematic references easily.</li>
+                            <li>Detect both source not found and empty references.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/reference_validator.png" alt="Document Reference Validator Screenshot">
             </div>
             <div class="feature">
-                <h3>📜 Definition Checker</h3>
-                <ul>
-                    <li>Check usage and definitions of terms.</li>
-                    <li>Identify and delete duplicate definitions.</li>
-                    <li>Support for different quote and validation formats.</li>
-                </ul>
-                <img src="img/definition_checker.png" alt="Definition Checker Screenshot"
-                    class="definition-checker-img">
+                <div class="feature-content">
+                    <div class="feature-content-inner">
+                        <h3>📜 Definition Checker</h3>
+                        <ul>
+                            <li>Check usage and definitions of terms.</li>
+                            <li>Identify and delete duplicate definitions.</li>
+                            <li>Support for different quote and validation formats.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/definition_checker.png" alt="Definition Checker Screenshot">
             </div>
             <div class="feature">
-                <h3>🧩 Unclosed Bracket Checker</h3>
-                <ul>
-                    <li>Identify and correct unclosed brackets.</li>
-                    <li>Support for common quote and bracket formats.</li>
-                    <li>Ignore numbered list parentheses.</li>
-                </ul>
-                <img src="img/unclosed_brackets_checker.png" alt="Unclosed Bracket Checker Screenshot"
-                    class="unclosed-bracket-checker-img">
+                <div class="feature-content">
+                    <div class="feature-content-inner">
+                        <h3>🧩 Unclosed Bracket Checker</h3>
+                        <ul>
+                            <li>Identify and correct unclosed brackets.</li>
+                            <li>Support for common quote and bracket formats.</li>
+                            <li>Ignore numbered list parentheses.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/unclosed_brackets_checker.png" alt="Unclosed Bracket Checker Screenshot">
             </div>
             <div class="feature">
-                <h3>🔢 Numbering Issues</h3>
-                <ul>
-                    <li>Fix numbering issues for proper structure.</li>
-                    <li>Support for single and two-page layouts.</li>
-                </ul>
-                <img src="img/nunbering_issues.png" alt="Numbering Issues Screenshot" class="numbering-issues-img">
+                <div class="feature-content">
+                    <div class="feature-content-inner">
+                        <h3>🔢 Numbering Issues</h3>
+                        <ul>
+                            <li>Fix numbering issues for proper structure.</li>
+                            <li>Support for single and two-page layouts.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/numbering_issues.png" alt="Numbering Issues Screenshot">
             </div>
             <div class="feature">
-                <h3>🔤 Punctuation Checker</h3>
-                <ul>
-                    <li>Ensure consistent punctuation usage.</li>
-                    <li>Support for various page layouts and grouping methods.</li>
-                </ul>
-                <img src="img/punctuation_checker.png" alt="Punctuation Checker Screenshot"
-                    class="punctuation-checker-img">
+                <div class="feature-content">
+                    <div class="feature-content-inner">
+                        <h3>🔤 Punctuation Checker</h3>
+                        <ul>
+                            <li>Ensure consistent punctuation usage.</li>
+                            <li>Support for various page layouts and grouping methods.</li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="img/punctuation_checker.png" alt="Punctuation Checker Screenshot">
             </div>
         </div>
     </section>
@@ -412,6 +433,27 @@
         posthog.init('phc_P3OLO6IZVhIHV8tXChiF5KxofhlaqcyZ4GS5jXss6DT', {
             api_host: 'https://eu.i.posthog.com', person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
         })
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const features = document.querySelectorAll('.feature');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.5 // Adjust as needed for when the animation should trigger
+            });
+
+            features.forEach(feature => {
+                observer.observe(feature);
+            });
+        });
     </script>
 </body>
 
