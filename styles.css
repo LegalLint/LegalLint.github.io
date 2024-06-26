@@ -21,12 +21,6 @@ header {
     background: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }
 
-.header-logo {
-    font-size: 2rem;
-    color: #1f2937;
-    margin-bottom: 0px;
-}
-
 .header-content {
     max-width: 50%;
     margin-bottom: 30px;
