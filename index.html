@@ -25,6 +25,7 @@
                 <li><a href="#faq">🔍 FAQ</a></li>
                 <li><a href="#team">👥 Team</a></li>
                 <li><a href="#contact">📧 Contact</a></li>
+                <li><button id="book-demo-btn" class="book-demo-btn">📅 Book Demo</button></li>
             </ul>
         </div>
     </nav>
@@ -357,6 +358,18 @@
             });
         });
     </script>
+
+
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        document.getElementById('book-demo-btn').addEventListener('click', function () {
+            Calendly.showPopupWidget('https://calendly.com/datitran/30min');
+        });
+    </script>
+    <!-- Calendly badge widget end -->
 </body>
 
 </html>

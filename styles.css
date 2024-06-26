@@ -842,10 +842,15 @@ footer a:hover {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    /* Ensures vertical alignment */
 }
 
 .navbar-menu li {
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    /* Ensures vertical alignment */
 }
 
 .navbar-menu li:last-child {
@@ -858,6 +863,9 @@ footer a:hover {
     font-size: 1rem;
     padding: 10px 15px;
     transition: background-color 0.3s ease, border-radius 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-menu a:hover {
@@ -904,23 +912,32 @@ footer a:hover {
         top: 60px;
         left: 0;
         background-color: #1f2937;
-        /* Dark background */
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         width: 100%;
         text-align: center;
         z-index: 100;
         flex-direction: column;
-        /* Stack items vertically */
+        padding: 10px 0;
     }
 
     .navbar-menu.open {
-        display: block;
-        /* Show navbar items when .open class is added */
+        display: flex;
     }
 
     .navbar-menu li {
-        margin: 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-menu a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+        /* Ensures padding is included in the width */
     }
 
     .navbar-menu a {
@@ -932,5 +949,27 @@ footer a:hover {
 
     .navbar-menu a:hover {
         background-color: #2563eb;
+    }
+}
+
+.book-demo-btn {
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.book-demo-btn:hover {
+    background-color: #1d4ed8;
+}
+
+@media screen and (max-width: 768px) {
+    .book-demo-btn {
+        width: 100%;
+        text-align: center;
     }
 }
