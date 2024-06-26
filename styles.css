@@ -718,3 +718,53 @@ footer a:hover {
         right: 15px;
     }
 }
+
+.faq-section {
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.faq-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #2563eb;
+    margin: 10px auto 0;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin: 0;
+}
+
+.faq-item a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
