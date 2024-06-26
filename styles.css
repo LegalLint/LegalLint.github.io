@@ -5,13 +5,6 @@ body {
     padding: 0;
 }
 
-body,
-html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -104,14 +97,6 @@ header {
 
 .play-button:hover {
     background: rgba(0, 0, 0, 0.8);
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    height: 100%;
 }
 
 .features-section {
