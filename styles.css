@@ -1,6 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
     color: #333;
     margin: 0;
     padding: 0;
@@ -720,7 +719,8 @@ footer a:hover {
 }
 
 .faq-section {
-    max-width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
     background-color: #ffffff;
     padding: 60px 20px;
     text-align: center;
@@ -746,18 +746,55 @@ footer a:hover {
 .faq-item {
     margin-bottom: 40px;
     text-align: left;
+    border-top: 1px solid #eee;
+    /* Add a border between items for separation */
+    padding-top: 20px;
+    /* Add padding above each item */
 }
 
 .faq-item h3 {
     font-size: 1.5rem;
     color: #1f2937;
     margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item h3 .toggle-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    /* Ensure a minimum width for consistency */
+    min-height: 20px;
+    /* Ensure a minimum height for consistency */
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active h3 .toggle-icon {
+    transform: rotate(45deg);
 }
 
 .faq-item p {
     font-size: 1rem;
     color: #4b5563;
     margin: 0;
+    display: none;
+    /* Hide the answer text by default */
+}
+
+.faq-item.active p {
+    display: block;
+    /* Show the answer text when .active class is applied */
 }
 
 .faq-item a {

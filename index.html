@@ -114,58 +114,71 @@
     <section class="faq-section">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
+
             <div class="faq-item">
-                <h3>My company is blocking the Microsoft AppSource Store. How do I install it?</h3>
+                <h3>
+                    My company is blocking the Microsoft AppSource Store. How do I install it?
+                    <span class="toggle-icon">+</span>
+                </h3>
                 <p>In many larger enterprises, the store is blocked for security reasons. Your IT department needs to
-                    install it for
-                    you via the <a
+                    install it for you via the <a
                         href="https://learn.microsoft.com/en-us/office/dev/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog"
                         target="_blank">SharePoint app catalog</a> or the <a
                         href="https://learn.microsoft.com/en-us/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-worldwide"
-                        target="_blank">Microsoft 365 admin center</a>. We can work together with your
-                    IT to
-                    ensure seamless integration. Don't hesitate to contact us for assistance.</p>
+                        target="_blank">Microsoft 365 admin center</a>. We can work together with your IT to ensure
+                    seamless integration. Don't hesitate to contact us for assistance.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Can I use LegalLint without an internet connection?</h3>
+                <h3>
+                    Can I use LegalLint without an internet connection?
+                    <span class="toggle-icon">+</span>
+                </h3>
                 <p>Previously, Word add-ins were executables installed directly on your machine. Microsoft now prefers
-                    to host the
-                    add-ins as web apps to ensure cross-compatibility across different operating systems (Windows, Mac,
-                    and Web).
-                    Therefore, you need an internet connection to start and authorize LegalLint. However, once you are
-                    in your Word
-                    document and do not close it, LegalLint can be used locally, as Word caches the code for 30 days and
-                    all
-                    processing happens on your machine.</p>
+                    to
+                    host the add-ins as web apps to ensure cross-compatibility across different operating systems
+                    (Windows,
+                    Mac, and Web). Therefore, you need an internet connection to start and authorize LegalLint. However,
+                    once you are in your Word document and do not close it, LegalLint can be used locally, as Word
+                    caches
+                    the code for 30 days and all processing happens on your machine.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Where is your add-in hosted?</h3>
+                <h3>
+                    Where is your add-in hosted?
+                    <span class="toggle-icon">+</span>
+                </h3>
                 <p>Our add-in is hosted in Frankfurt, Germany. We do not store any logs. Additionally, when you start
-                    using our
-                    add-in, it gets cached on your local computer, and therefore, your document is processed locally,
-                    except for the
-                    standard terms checker, which requires a web call to our server because our AI is hosted there.</p>
+                    using our add-in, it gets cached on your local computer, and therefore, your document is processed
+                    locally, except for the standard terms checker, which requires a web call to our server because our
+                    AI
+                    is hosted there.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Are my documents processed in the cloud?</h3>
+                <h3>
+                    Are my documents processed in the cloud?
+                    <span class="toggle-icon">+</span>
+                </h3>
                 <p>If you use LegalLint locally and do not use the standard terms checker, your documents are not moved
-                    out of your
-                    local computer. This ensures compliance with any data security regulations.</p>
+                    out of your local computer. This ensures compliance with any data security regulations.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Can I also use LegalLint for other purposes, for example, to proofread my bachelor's/master's thesis
+                <h3>
+                    Can I also use LegalLint for other purposes, for example, to proofread my bachelor's/master's thesis
                     or
-                    articles?</h3>
+                    articles?
+                    <span class="toggle-icon">+</span>
+                </h3>
                 <p>Absolutely! Although our main focus is on legal professionals, many of our features are also
-                    applicable in other areas, such as proofreading theses. Ideally, you can use it in combination with
-                    <a href="https://intelligentediting.com/" target="_blank">PerfectIt</a> and
-                    <a href="https://www.grammarly.com/" target="_blank">Grammarly</a>.
-                </p>
+                    applicable
+                    in other areas, such as proofreading theses. Ideally, you can use it in combination with <a
+                        href="https://intelligentediting.com/" target="_blank">PerfectIt</a> and <a
+                        href="https://www.grammarly.com/" target="_blank">Grammarly</a>.</p>
             </div>
+
         </div>
     </section>
 
@@ -274,6 +287,20 @@
 
         // Start the interval for changing words every 3 seconds
         setInterval(changeWord, 3000);
+
+        // JavaScript for toggling FAQ items
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const title = item.querySelector('h3');
+                const content = item.querySelector('p');
+
+                title.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        });
     </script>
 </body>
 
