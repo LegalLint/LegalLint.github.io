@@ -969,7 +969,7 @@ footer a:hover {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .feature {
         flex-direction: column;
         align-items: center;
@@ -982,6 +982,10 @@ footer a:hover {
     .feature img {
         width: 80%;
         margin: 20px 0;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        animation: none !important;
+        filter: none !important;
     }
 
     .feature-content {
@@ -992,11 +996,11 @@ footer a:hover {
     }
 
     .feature-content-inner {
-        align-items: center;
+        align-items: left;
     }
 
-    .feature h3 {
-        font-size: 1.3rem;
+    .feature-content h3 {
+        font-size: 1.4rem;
     }
 
     .feature ul {
@@ -1011,5 +1015,27 @@ footer a:hover {
 
     .feature li::before {
         font-size: 1.4rem;
+    }
+}
+
+@media (orientation: landscape) {
+    .feature {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .feature img {
+        width: 20%;
+        /* Adjust the width as desired for landscape mode */
+    }
+
+    .feature-content {
+        width: calc(100% - 40px);
+        max-width: 50%;
+        margin: 50px;
+        padding: 0;
     }
 }
