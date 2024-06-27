@@ -182,8 +182,8 @@ header {
 .feature li {
     font-size: 2rem;
     /* Increased font size */
-    color: #6b7280;
-    margin: 5px 0;
+    color: #45484d;
+    margin: 0px 0;
 }
 
 .feature img {
@@ -1009,6 +1009,10 @@ footer a:hover {
         /* Left-align text for better readability */
         padding-left: 20px;
         /* Ensure list items are indented */
+    }
+
+    .feature li {
+        font-size: 1.4rem;
     }
 
     .feature p {
